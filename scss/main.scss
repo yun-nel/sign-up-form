@@ -92,6 +92,7 @@ form {
     display: flex;
     flex-direction: column;
     padding-left: 2vw;
+    margin-bottom: 4rem;
     // padding: 2vw;
     // background-color: #202020;
     // box-shadow: 0px 4px 4px -2px grey;
@@ -123,6 +124,10 @@ form {
         background-color: #2e2e2e;
         color: #fff;
         font-size: 1.4rem;
+
+        &:focus {
+            outline: 2px solid $lantern-color;
+        }
     }
 
     label {
@@ -132,7 +137,7 @@ form {
 
     button {
         padding: 1rem;
-        border: 1px solid $lantern-color;
+        border: 2px solid $lantern-color;
         border-radius: 0.5rem;
         background-color: $primary-color;
         color: $lantern-color;
@@ -147,6 +152,16 @@ form {
     }
 }
 
+.login-prompt {
+    padding-left: 2vw;
+
+    a {
+        color: $lantern-color;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
 // Make form labels appear above the inputs
 // .form-container {
 //     position: relative;

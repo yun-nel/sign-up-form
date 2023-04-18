@@ -78,6 +78,7 @@ form {
   display: flex;
   flex-direction: column;
   padding-left: 2vw;
+  margin-bottom: 4rem;
 }
 form .names,
 form .contacts,
@@ -104,13 +105,16 @@ form input {
   color: #fff;
   font-size: 1.4rem;
 }
+form input:focus {
+  outline: 2px solid #ec7a64;
+}
 form label {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 form button {
   padding: 1rem;
-  border: 1px solid #ec7a64;
+  border: 2px solid #ec7a64;
   border-radius: 0.5rem;
   background-color: #1e1e1e;
   color: #ec7a64;
@@ -121,4 +125,14 @@ form button {
 form button:hover {
   background-color: #ec7a64;
   color: #1e1e1e;
+}
+
+.login-prompt {
+  padding-left: 2vw;
+}
+.login-prompt a {
+  color: #ec7a64;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
