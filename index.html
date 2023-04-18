@@ -37,24 +37,27 @@
             <div class="contacts">
                 <div class="form-container">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" aria-required="true" required>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-required="true" required>
                 </div>
     
                 <div class="form-container">
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number" aria-required="true"  required>
+                    <!-- Validates Australian phone numbers -->
+                    <input type="tel" id="phone-number" name="phone-number" aria-required="true" pattern="^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$" required>
                 </div>
             </div>
     
             <div class="passwords">
                 <div class="form-container">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" aria-required="true" required>
+                    <!-- Validates for one uppercase, one lowercase, one digit, one special character and between 8 and 20 characters long -->
+                    <input type="password" id="password" name="password" aria-required="true" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,20}$" required>
                 </div>
         
                 <div class="form-container">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password" aria-required="true" required>    
+                    <input type="password" id="confirm-password" name="confirm-password" aria-required="true" required>
+                    <div id="password-error"></div>
                 </div>
             </div>
 
@@ -64,4 +67,5 @@
         <p class="login-prompt">Already have an account? <a href="login.html">Log in</a></p> 
     </main>
 </body>
+<script src="script.js"></script>
 </html>
