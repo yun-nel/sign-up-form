@@ -126,6 +126,22 @@ form {
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
     }
+
+    button {
+        padding: 1rem;
+        border: 1px solid #ec7a64;
+        border-radius: 0.5rem;
+        background-color: #1e1e1e;
+        color: #ec7a64;
+        font-size: 2rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ec7a64;
+            color: #1e1e1e;
+        }
+    }
 }
 
 // Make form labels appear above the inputs
