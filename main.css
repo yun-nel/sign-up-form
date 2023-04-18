@@ -34,7 +34,7 @@ input,
 textarea,
 select,
 button {
-  width: 15rem;
+  width: 20rem;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -65,10 +65,46 @@ button {
   padding-top: 8vw;
   padding-left: 2vw;
   padding-right: 20vw;
+  margin-bottom: 5rem;
   font-size: 2.2rem;
   font-weight: 700;
 }
 .top-text p {
   display: block;
   margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+}
+form .names,
+form .contacts,
+form .passwords {
+  display: flex;
+  margin-bottom: 2rem;
+}
+form p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+form .form-container {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-size: 1.4rem;
+}
+form label {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
